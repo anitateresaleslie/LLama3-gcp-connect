@@ -1,0 +1,8 @@
+import requests
+
+api_key = "YOUR_API_KEY"
+url = f"https://YOUR_CLOUD_FUNCTION_URL?api_key={api_key}"
+
+response = requests.post(url, json={"input": "Your input text"})
+
+print(response.json())
